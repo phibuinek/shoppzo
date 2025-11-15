@@ -1,6 +1,7 @@
 import { Inter, Knewave } from "next/font/google";
 import "./globals.css";
 import Header from "./(components)/Header";
+import Provider from "./Provider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,8 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${knewave.variable} antialiased`}>
-        <Header />
-        {children}
+        <Provider>{children}</Provider>
       </body>
     </html>
   );

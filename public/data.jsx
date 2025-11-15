@@ -7,7 +7,7 @@ export const categories = [
   "Watches",
 ];
 
-export const products = [
+export const dummyProducts = [
   // Headphones (ID 1 to 5)
   {
     id: "1",
@@ -68,7 +68,7 @@ export const products = [
       "High-quality gaming headphones with a built-in microphone for an immersive gaming experience.",
     price: 40,
     offerPrice: 35,
-    images: ["product_5.png"],
+    images: ["product_5_1.png", "product_5_2.png"],
     categories: ["Headphones"],
     color: "Black",
     date: 1716622345448,
