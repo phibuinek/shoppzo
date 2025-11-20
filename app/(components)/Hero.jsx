@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Carousel,
@@ -8,8 +9,10 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { MoveRight } from "lucide-react";
+import { useAppContext } from "../(context)/AppContext";
 
 function Hero() {
+  const { router } = useAppContext();
   const slides = [
     {
       headline: "Your All-in-One Gadget Store",
@@ -61,6 +64,7 @@ function Hero() {
                   </span>
                 </div>
                 <Button
+                  onClick={() => router.push("/collection")}
                   className={
                     "py-6 sm:py-8 w-44 sm:w-56 font-semibold sm:text-lg rounded-none mt-8 flexCenter gap-2 "
                   }
